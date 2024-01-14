@@ -14,7 +14,6 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     curl \
     lsb-release \
-    sudo \
     git
     
 
@@ -41,6 +40,3 @@ RUN apt-get clean && \
 # 设置工作目录
 WORKDIR /workspace
 
-# 创建用户
-RUN useradd -m bowlmeat
-USER bowlmeat
